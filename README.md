@@ -11,3 +11,11 @@ Creer un serveur HTTP en utilisant Rust.
 - On cree la reponse HTTP
 - On envoie la reponse
 - Tout ca est fait en continue
+
+## Installation
+
+```bash
+cd server 
+cargo build
+cargo run
+```
