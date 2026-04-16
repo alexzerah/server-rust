@@ -14,8 +14,9 @@ fn main() {
 fn handle_connection(mut stream: TcpStream) {
     let mut buffer = [0; 1024];
     stream.read(&mut buffer).unwrap_or_else(|err| {
-        eprintln!("Error reading from stream: {}", err);
-    });
+    eprintln!("Error reading from stream: {}", err);
+    0
+});
 
     let body = "<!DOCTYPE html>
     <html>
